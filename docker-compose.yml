@@ -1,0 +1,13 @@
+services:
+  secure-data-tools:
+    build: .
+    image: secure-data-tools:latest
+    container_name: secure-data-tools
+    ports:
+      - "8080:80"
+    restart: always
+
+networks:
+  default:
+    name: global-link
+    external: true
