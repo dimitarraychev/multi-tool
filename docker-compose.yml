@@ -4,7 +4,7 @@ services:
     image: secure-data-tools:latest
     container_name: secure-data-tools
     ports:
-      - "8080:80"
+      - "8082:80"
     restart: always
 
 networks:
